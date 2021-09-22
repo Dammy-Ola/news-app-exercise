@@ -67,3 +67,22 @@ export default function Home() {
     </div>
   )
 }
+
+export async function getServerSideProps() {
+  const res =
+    await fetch(`https://newsapi.org/v2/top-headlines/sources?apiKey=${process.env.NEWS_API_API_KEY}
+  `)
+  const data = await res.json()
+
+  console.log(data)
+
+  if (!data) {
+    return {
+      notFound: true,
+    }
+  }
+
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
