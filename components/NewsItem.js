@@ -21,7 +21,12 @@ export default function NewsItem({ article }) {
         </div>
 
         {/* <Link > */}
-        <a className='text-xs font-medium' href={article.url} target='_blank'>
+        <a
+          className='text-xs font-medium'
+          href={article.url}
+          target='_blank'
+          rel='noreferrer'
+        >
           {article.title}
         </a>
         {/* </Link> */}
