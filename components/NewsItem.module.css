@@ -1,0 +1,11 @@
+.newsItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsItem :nth-child(1) {
+  flex: 4;
+}
+.newsItem :nth-child(2) {
+  flex: 2;
+}
