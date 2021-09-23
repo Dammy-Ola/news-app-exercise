@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import slugify from 'slugify'
+// import Link from 'next/link'
+// import slugify from 'slugify'
 import moment from 'moment'
 import styles from './NewsItem.module.css'
 
@@ -20,9 +20,11 @@ export default function NewsItem({ article }) {
           </div>
         </div>
 
-        <Link href={`${slugify(article.title)}`}>
-          <a className='text-xs font-medium'>{article.title}</a>
-        </Link>
+        {/* <Link > */}
+        <a className='text-xs font-medium' href={article.url} target='_blank'>
+          {article.title}
+        </a>
+        {/* </Link> */}
       </div>
 
       <div className='pl-5'>
