@@ -40,6 +40,7 @@ export default function LastestNewsItem({ article }) {
                   className='text-xs font-medium'
                   href={article.url}
                   target='_blank'
+                  rel='noreferrer'
                 >
                   {article.title}
                 </a>
@@ -90,6 +91,7 @@ export default function LastestNewsItem({ article }) {
                   className='text-2xl font-medium'
                   href={article.url}
                   target='_blank'
+                  rel='noreferrer'
                 >
                   {article.title}
                 </a>
