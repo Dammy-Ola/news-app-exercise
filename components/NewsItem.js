@@ -14,7 +14,7 @@ export default function NewsItem({ article }) {
             <span className='text-purple-600 text-sm mb-10'>
               {`${moment(article.publishedAt).fromNow()}`}
             </span>
-            <span class='material-icons text-yellow-400 text-sm ml-1'>
+            <span className='material-icons text-yellow-400 text-sm ml-1'>
               local_fire_department
             </span>
           </div>
@@ -28,10 +28,10 @@ export default function NewsItem({ article }) {
       <div className='pl-5'>
         <div className='flex justify-between text-purple-600'>
           <div>
-            <span class='material-icons text-lg'>favorite_border</span>
+            <span className='material-icons text-lg'>favorite_border</span>
             <small className='ml-2'>235</small>
           </div>
-          <span class='material-icons text-lg'>more_horiz</span>
+          <span className='material-icons text-lg'>more_horiz</span>
         </div>
 
         <div className='my-3'>
