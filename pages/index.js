@@ -35,12 +35,12 @@ export default function HomePage({ articles }) {
                         <span className='ml-2 inline text-sm mb-10'>
                           {`${moment(articles[0].publishedAt).fromNow()}`}
                         </span>
-                        <span class='material-icons text-yellow-400 text-sm ml-1'>
+                        <span className='material-icons text-yellow-400 text-sm ml-1'>
                           local_fire_department
                         </span>
                       </div>
                     </div>
-                    <span class='material-icons text-lg'>more_horiz</span>
+                    <span className='material-icons text-lg'>more_horiz</span>
                   </div>
 
                   <Link href={`${slugify(articles[0].title)}`}>
@@ -48,7 +48,9 @@ export default function HomePage({ articles }) {
                   </Link>
 
                   <div className='flex justify-end'>
-                    <span class='material-icons text-xl'>favorite_border</span>
+                    <span className='material-icons text-xl'>
+                      favorite_border
+                    </span>
                     <small className='ml-2 mt-2'>235</small>
                   </div>
                 </div>
